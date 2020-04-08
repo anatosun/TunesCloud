@@ -39,7 +39,7 @@ Run the queries into the database
 ```
 mysql -u MYSQLUSERNAME --pYOURPASSWORD YOURDATABASENAME -e "source output.sql;"
 ```
-Some errors will be prompted to the terminal if there are duplicates (tracks with same title, artist and album). These will not be added to your playlists.
+**Some errors will be prompted to the terminal if there are duplicates (tracks with same title, artist and album). These will not be added to your playlists.**
 ### Finally 
 Enjoy your playlists in the Music app. This tool can of course be automated using cron or any automation tool.
 
