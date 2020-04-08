@@ -11,7 +11,7 @@ For importing playlist into the database you need to have admin privileges.
 The XSLT processor to use is Saxon, as this transformation makes use of non compatible XSLT 1.0 functionalities.
 
 #### XSLT file
-Replace your username in the XSLT file and your library name if you wish to evict it. Note that the library name must be set in your system language (e.g. for a system language set in French it would be 'Bibliothèque').
+Replace your username in the XSLT file and your library name if you wish to evict the native 'Library' playlist. Note that the library name must be set in your system language (e.g. for a system language set in French it would be 'Bibliothèque').
 
 #### Music importation
 The tracks needs to be imported into the database prior to importing the playlists. Do so and run
@@ -37,7 +37,7 @@ saxon "iTunes Music Library.xml" xml_to_sql.xsl >> output.sql
 Run the queries into the database
 
 ```
-mysql -u MYSQLUSERNAME --pYOURPASSWORD YOURDATABASENAME -e "source data.sql;"
+mysql -u MYSQLUSERNAME --pYOURPASSWORD YOURDATABASENAME -e "source output.sql;"
 ```
 Some errors will be prompted to the terminal if there are duplicates (tracks with same title, artist and album). These will not be added to your playlists.
 ### Finally 
