@@ -1,6 +1,6 @@
 # iTunes Playlist exporter to Nextcloud / Owncloud Music app
 
-The Music app for Nextcloud / Owncloud does not come with a playlist importation tool. This little XSLT transformation takes the 'iTunes Music Library' file and generates SQL queries for your MYSQL database.
+The Music app for Nextcloud / Owncloud does not come with a playlist importation tool. This little XSLT transformation takes the 'iTunes Music Library' XML file and generates SQL queries for your MYSQL database.
 
 ## Getting Started
 
